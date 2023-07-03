@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: midjourney
+Version: 0.0.13
+Summary: Midjourney allows developers to easily use midjourney api without complications.
+Author: Ajaga Abdulbasit (Code  Ninja)
+Author-email: basitng2004@gmail.com
+Keywords: python,ai,midjourney,image,request,stable,stable difusion,difusion
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# midjourney
