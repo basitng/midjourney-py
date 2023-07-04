@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
-Name: midjourney
+Name: PyMidjourney
 Version: 0.0.13
-Summary: Midjourney allows developers to easily use midjourney api without complications.
+Summary: PyMidjourney allows developers to easily use midjourney api without complications.
 Author: Ajaga Abdulbasit (Code  Ninja)
 Author-email: basitng2004@gmail.com
 Keywords: python,ai,midjourney,image,request,stable,stable difusion,difusion

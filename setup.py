@@ -8,12 +8,12 @@ with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
 VERSION = '0.0.13'
-DESCRIPTION = 'Midjourney allows developers to easily use midjourney api without complications.'
-LONG_DESCRIPTION = '''The Midjourney APIRequest library provides a simplified and convenient way for developers to interact with the Midjourney API. With this library, developers can easily integrate Midjourney's powerful image processing capabilities into their applications without dealing with the complexities of manual API calls.'''
+DESCRIPTION = 'PyMidjourney allows developers to easily use midjourney api without complications.'
+LONG_DESCRIPTION = '''The PyMidjourney APIRequest library provides a simplified and convenient way for developers to interact with the Midjourney API. With this library, developers can easily integrate Midjourney's powerful image processing capabilities into their applications without dealing with the complexities of manual API calls.'''
 
 # Setting up
 setup(
-    name="midjourney",
+    name="PyMidjourney",
     version=VERSION,
     author="Ajaga Abdulbasit (Code  Ninja)",
     author_email="basitng2004@gmail.com",
