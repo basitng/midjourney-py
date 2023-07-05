@@ -1,3 +1,8 @@
+# Installation
+```installation
+pip install midjourney-py==1.0.0
+```
+
 # midjourney
 
 midjourney library provides a simplified and convenient way for developers to interact with the Midjourney API. With this library, developers can easily integrate Midjourney's powerful image processing capabilities into their applications without dealing with the complexities of manual API calls.
@@ -182,9 +187,10 @@ The midjourney is created to make interacting with midjourney-py easy and more s
 1. [A crying white kid holding a blue candy ](https://cdn.discordapp.com/attachments/1124090271676772432/1126110757319360582/olivier_A_crying_white_kid_holding_a_blue_candy_splash_around_h_5b0a4099-f398-4118-8206-33f64c1a5589.png)
 2. [Upscaled Lion](https://cdn.midjourney.com/de36ac34-3209-4940-ab10-7178305ca75f/0_3.png)
 3. [Lion 8k Ultra reality in a rainy zone](https://cdn.discordapp.com/attachments/1124090271676772432/1126104957876187237/olivier_Lion_king_8k_ultra_reality_in_a_rainy_zone___7017353063_1d46e0b1-ae48-47d6-b362-c91415b6d500.png)
-4. [A Lion King in a doom environment](https://cdn.discordapp.com/attachments/1124090271676772432/1125927531137220638/olivier_A_lion_king_in_a_doom_environment___0825378725574918___96c19b7a-5cbe-4879-a24f-1a2941670be8.png) 5.[Cute Lion with hats](https://cdn.discordapp.com/attachments/1124090271676772432/1125922290304041071/olivier_cute_lion_with_hats___8761618977992125___53dbddbd-63cc-45ef-86da-f16e8026ce96.png)
-5. [8k ultra reality girl](https://cdn.discordapp.com/attachments/1124109999103295560/1125782219466748015/ajaga_abdulbasit_8k_ultra_reality_girl_e4694834-d68a-4335-8713-be93c294a7d6.png)
-6. [Ajaga Abdulbasit generate a custom 8k picture of a coding ninja](https://cdn.discordapp.com/attachments/1124109999103295560/1125250412996472862/ajaga_abdulbasit_generate_a_custom_8k_picture_of_a_coding_ninja_05848b15-4e0f-4694-b0f8-358862b84e06.png)
+4. [A Lion King in a doom environment](https://cdn.discordapp.com/attachments/1124090271676772432/1125927531137220638/olivier_A_lion_king_in_a_doom_environment___0825378725574918___96c19b7a-5cbe-4879-a24f-1a2941670be8.png)
+5. [Cute Lion with hats](https://cdn.discordapp.com/attachments/1124090271676772432/1125922290304041071/olivier_cute_lion_with_hats___8761618977992125___53dbddbd-63cc-45ef-86da-f16e8026ce96.png)
+6. [8k ultra reality girl](https://cdn.discordapp.com/attachments/1124109999103295560/1125782219466748015/ajaga_abdulbasit_8k_ultra_reality_girl_e4694834-d68a-4335-8713-be93c294a7d6.png)
+7. [Ajaga Abdulbasit generate a custom 8k picture of a coding ninja](https://cdn.discordapp.com/attachments/1124109999103295560/1125250412996472862/ajaga_abdulbasit_generate_a_custom_8k_picture_of_a_coding_ninja_05848b15-4e0f-4694-b0f8-358862b84e06.png)
 
 ### Special Thanks
 
