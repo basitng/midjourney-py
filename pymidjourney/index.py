@@ -48,7 +48,7 @@ class Midjourney:
     def imagine(self, prompt: str) -> Dict:
         return self.api_request.imagine(prompt)
 
-    def upscale(self, task_id: str, position: int) -> Dict:
+    def upscale(self, task_id: str, position: str) -> Dict:
         return self.api_request.upscale_image(task_id, position)
 
     def seed(self, task_id: str) -> Dict:

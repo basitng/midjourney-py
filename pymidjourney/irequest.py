@@ -44,11 +44,10 @@ class APIRequest:
                    'Content-Type': 'application/json'}
         return APIRequest.send_request(endpoint, data, headers)
 
-    def upscale_image(self, task_id: str, position: int) -> Dict:
+    def upscale_image(self, task_id: str, position: str) -> Dict:
         endpoint = 'upscale'
         data = {'taskId': task_id, 'position': position}
-        headers = {'Authorization': self.api_key,
-                   'Content-Type': 'application/json'}
+        headers = {'Authorization': self.api_key}
         return APIRequest.send_request(endpoint, data, headers)
 
     def imagine(self, prompt: str) -> Dict:
