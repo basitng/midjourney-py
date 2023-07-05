@@ -1,6 +1,6 @@
 from typing import Dict
 import time
-from pymidjourney.irequest import APIRequest
+from midjourney.irequest import APIRequest
 
 
 class Midjourney:
