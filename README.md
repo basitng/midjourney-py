@@ -33,6 +33,8 @@ else:
 
 ### Using the Describe API
 
+Describe images using the describe api from midjourney
+
 ```python
 
 from pymidjourney import Midjourney
@@ -53,6 +55,28 @@ else:
     print(message)
 
 
+```
+
+#### Describe response
+
+```json
+{
+  "taskId": "task_id_generated"
+}
+```
+
+when passed to the result method
+
+```json
+{
+  "status": "completed",
+  "content": [
+    "1️⃣ four images of a lion lying in water, in the style of cinematic sets, fantasy characters, cinematic lighting, ray tracing, soggy, naturalistic bird portraits, strong facial expression ",
+    "2️⃣ four different images of a lion sitting in the water, in the style of vray tracing, realistic, emotive portraits, bokeh, [noah bradley](https://goo.gl/search?artist%20noah%20bradley), fairy tale, photorealistic compositions, 8k ",
+    "3️⃣ lion portraits in the water, in the style of [raphael lacoste](https://goo.gl/search?artist%20raphael%20lacoste), bokeh, detailed character expressions, [charles spencelayh](https://goo.gl/search?artist%20charles%20spencelayh), emotional and dramatic scenes, nature inspired, fawncore ",
+    "4️⃣ the lion  lion photo editing, lion phototutorials, lionphotography, portrait photography, animal photography, lion photo, in the style of vray tracing, wet-on-wet blending, multi-panel compositions, rendered in cinema4d, 8k 3d, fairy tale, bokeh"
+  ]
+}
 ```
 
 #### Imagine response
@@ -84,7 +108,10 @@ from pymidjourney import Midjourney
 midjourney = Midjourney(
     api_key="API_KEY", callback_uri="")
 
-result = midjourney.result(seed="seed")
+seed = {
+    "taskId": 'your_task_id',
+}
+result = midjourney.result(seed=seed)
 if result.get('status') == 'completed':
     response = result
     print(response)
@@ -136,4 +163,10 @@ midjourney = Midjourney(
 seed = midjourney.seed(task_id="the_task_id")
 
 print(seed)
+```
+
+#### Seed response
+
+```json
+{ "taskId": "https://..........png" }
 ```

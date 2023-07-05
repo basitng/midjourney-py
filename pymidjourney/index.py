@@ -33,7 +33,7 @@ class Midjourney:
                 elif response.get('status') == 'running':
                     percentage = response.get('percentage')
                     print(f"Task is {percentage}% complete.")
-                elif response.get('status') in ['pending', 'waiting-to-start', 'unknown', {}]:
+                elif response.get('status') in ['pending', 'waiting-to-start', 'unknown', {}, 'failed-please-resubmit']:
                     print("Task is pending. Waiting for it to start...")
                     time.sleep(2)
                     continue
@@ -54,5 +54,5 @@ class Midjourney:
     def seed(self, task_id: str) -> Dict:
         return self.api_request.seed(task_id)
 
-    def describe(self, image_path: str) -> Dict:
-        return self.api_request.describe_image(image_path)
+    def describe(self, image_path: str, filename: str) -> Dict:
+        return self.api_request.describe_image(image_file_path=image_path, filename=filename)

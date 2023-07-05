@@ -26,9 +26,12 @@ class APIRequest:
             print(response)
             return response.text
 
-    def describe_image(self, image_file_path: str) -> Dict:
+    def describe_image(self, image_file_path: str, filename: str) -> Dict:
         endpoint = 'describe'
-        files = [('image', image_file_path)]
+        files = [
+            ('image', (filename, open(
+                image_file_path, 'rb'), 'image/png'))
+        ]
 
         data = {}
         if self.callback_uri != "":
