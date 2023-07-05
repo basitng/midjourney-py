@@ -33,7 +33,7 @@ class Midjourney:
                 elif response.get('status') == 'running':
                     percentage = response.get('percentage')
                     print(f"Task is {percentage}% complete.")
-                elif response.get('status') in ['pending', 'waiting-to-start', {}]:
+                elif response.get('status') in ['pending', 'waiting-to-start', 'unknown', {}]:
                     print("Task is pending. Waiting for it to start...")
                     time.sleep(2)
                     continue
@@ -42,7 +42,7 @@ class Midjourney:
                 time.sleep(2)
                 continue
 
-            if response.get('status') not in ['running', 'pending']:
+            if response.get('status') not in ['running', 'pending', 'unknown']:
                 break
 
     def imagine(self, prompt: str) -> Dict:
@@ -51,11 +51,8 @@ class Midjourney:
     def upscale(self, task_id: str, position: int) -> Dict:
         return self.api_request.upscale_image(task_id, position)
 
-    def seed(self, message_id: str, job_id: str) -> Dict:
-        return self.api_request.seed(message_id, job_id)
-
-    def variants(self, message_id: str, job_id: str, position: str) -> Dict:
-        return self.api_request.variants(message_id, job_id, position)
+    def seed(self, task_id: str) -> Dict:
+        return self.api_request.seed(task_id)
 
     def describe(self, image_path: str) -> Dict:
         return self.api_request.describe_image(image_path)

@@ -19,7 +19,7 @@ class APIRequest:
                 url, data=data, files=files, headers=headers)
         else:
             response = requests.post(url, data=data, headers=headers)
-            print(response)
+
         if response.status_code == 200:
             return response.json()
         else:
@@ -60,21 +60,11 @@ class APIRequest:
         headers = {'Authorization': self.api_key}
         return APIRequest.send_request(endpoint, data, headers)
 
-    def variants(self, messageId: str, jobId: str, position: str) -> Dict:
-        endpoint = 'variants'
-        data = {
-            'messageId': messageId, 'jobId': jobId, 'position': position}
-
-        if self.callback_uri != "":
-            data['callbackURL'] = self.callback_uri
-
-        headers = {'Authorization': self.api_key}
-        return APIRequest.send_request(endpoint, data, headers)
-
-    def seed(self, messageId: str, jobId: str) -> Dict:
+    def seed(self, task_id: str) -> Dict:
         endpoint = 'seed'
         data = {
-            'messageId': messageId, 'jobId': jobId}
+            'taskId': task_id
+        }
 
         if self.callback_uri != "":
             data['callbackURL'] = self.callback_uri

@@ -4,16 +4,20 @@ from pymidjourney import Midjourney
 midjourney = Midjourney(
     api_key="20ceee09-37b4-46c8-9d70-7da99315212b", callback_uri="")
 
-seed = midjourney.imagine(prompt='cute lion with hats')
+seed = midjourney.seed(task_id='4410563673654327')
 print("🚀 ~ file: index.py:10 ~ seed:", seed)
 
-result = midjourney.result(seed=seed)
-print("🚀 ~ file: index.py:14 ~ result:", result)
+# 4410563673654327
+# seed = {
+#     'taskId': '7017353063477976'
+# }
+# result = midjourney.result(seed=seed)
+# print("🚀 ~ file: index.py:15 ~ result:", result)
 
-if result.get('status') == 'completed':
-    response = result
-    print(response)
-else:
-    # Handle the case when the result is not completed or an error occurred
-    message = result.get('message')
-    print(message)
+# if result.get('status') == 'completed':
+#     response = result
+#     print(response)
+# else:
+#     # Handle the case when the result is not completed or an error occurred
+#     message = result.get('message')
+#     print(message)

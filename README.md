@@ -97,7 +97,7 @@ else:
 
 ```
 
-### Using the VARIANTION API
+### Using the SEED API
 
 ```python
 from pymidjourney import Midjourney
@@ -105,8 +105,7 @@ from pymidjourney import Midjourney
 midjourney = Midjourney(
     api_key="AI_KEY", callback_uri="")
 
-variantions = midjourney.variants(jobId="xxxxxxxxxxxxxxxx",
-        messageId="xxxxxxxxxxxxxxxx", position=1)
+seed = midjourney.seed(task_id="xxxxxxxxxxxxxxxx")
 
-print(variantions)
+print(seed)
 ```
