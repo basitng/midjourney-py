@@ -13,7 +13,7 @@ LONG_DESCRIPTION = '''The MidjourneyPy APIRequest library provides a simplified 
 
 # Setting up
 setup(
-    name="Midjourney-py",
+    name="midjourney-py",
     version=VERSION,
     author="Ajaga Abdulbasit (Code  Ninja)",
     author_email="basitng2004@gmail.com",
