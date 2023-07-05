@@ -1,4 +1,4 @@
-name: PyPI Deployment
+name: midjourney-py
 
 on:
   push:
