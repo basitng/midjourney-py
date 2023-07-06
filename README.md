@@ -1,7 +1,7 @@
 # Installation
 
 ```installation
-pip install midjourney-py==1.0.0
+pip install midjourney-py
 ```
 
 # Midjourney
