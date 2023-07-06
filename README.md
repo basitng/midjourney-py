@@ -1,4 +1,5 @@
 # Installation
+
 ```installation
 pip install midjourney-py==1.0.0
 ```
@@ -36,7 +37,7 @@ else:
 
 ```
 
-### Imagine Response 
+### Imagine Response
 
 _Note_ the _task id_ generated will be passed to the result method to generate the imageUrl
 
@@ -54,7 +55,6 @@ when passed to the result method
   "imageUrl": "https://cdn.discordapp.com/attachments/1124090271676772432/1126110757319360582/olivier_A_crying_white_kid_holding_a_blue_candy_splash_around_h_5b0a4099-f398-4118-8206-33f64c1a5589.png"
 }
 ```
-
 
 ### Using the Describe API
 
@@ -103,6 +103,7 @@ when passed to the result method
   ]
 }
 ```
+
 ### Using the RESULT API
 
 ```python
@@ -178,7 +179,7 @@ print(seed)
 
 # Get a midjourney api to interact with midjourney-py
 
-[Slash Image](https://slashimagine.pro)
+[Get API key](https://slashimagine.pro)
 
 The midjourney is created to make interacting with midjourney-py easy and more structured.
 
