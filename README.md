@@ -36,6 +36,26 @@ else:
 
 ```
 
+### Imagine Response 
+
+_Note_ the _task id_ generated will be passed to the result method to generate the imageUrl
+
+```json
+{
+  "taskId": "your_task_id"
+}
+```
+
+when passed to the result method
+
+```json
+{
+  "status": "completed",
+  "imageUrl": "https://cdn.discordapp.com/attachments/1124090271676772432/1126110757319360582/olivier_A_crying_white_kid_holding_a_blue_candy_splash_around_h_5b0a4099-f398-4118-8206-33f64c1a5589.png"
+}
+```
+
+
 ### Using the Describe API
 
 Describe images using the describe api from midjourney
@@ -83,26 +103,6 @@ when passed to the result method
   ]
 }
 ```
-
-#### Imagine response
-
-_Note_ the _task id_ generated will be passed to the result method to generate the imageUrl
-
-```json
-{
-  "taskId": "your_task_id"
-}
-```
-
-when passed to the result method
-
-```json
-{
-  "status": "completed",
-  "imageUrl": "https://cdn.discordapp.com/attachments/1124090271676772432/1126110757319360582/olivier_A_crying_white_kid_holding_a_blue_candy_splash_around_h_5b0a4099-f398-4118-8206-33f64c1a5589.png"
-}
-```
-
 ### Using the RESULT API
 
 ```python
