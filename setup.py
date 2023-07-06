@@ -7,7 +7,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '1.0.0'
+VERSION = '1.0.2'
 DESCRIPTION = 'MidjourneyPy allows developers to easily use midjourney api without complications.'
 LONG_DESCRIPTION = '''The MidjourneyPy APIRequest library provides a simplified and convenient way for developers to interact with the Midjourney API. With this library, developers can easily integrate Midjourney's powerful image processing capabilities into their applications without dealing with the complexities of manual API calls.'''
 
