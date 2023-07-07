@@ -177,6 +177,10 @@ print(seed)
 { "taskId": "https://..........png" }
 ```
 
+### If you prefer learning with visual you will love this video tutorial by Code Ninja
+
+[Watch video](https://youtu.be/3EW5pP1t1PA)
+
 # Get a midjourney api to interact with midjourney-py
 
 [Get API key](https://slashimagine.pro)
